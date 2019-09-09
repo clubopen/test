@@ -23,34 +23,45 @@
             <div class="field">
               <label class="label">Nombre y Apellidos</label>
               <div class="control">
-                <input class="input" type="text" placeholder="Nombre y apellidos">
+                <input class="input" type="text" placeholder="Nombre y apellidos" required>
               </div>
             </div>
             <div class="field">
               <label class="label">DNI</label>
               <div class="control">
-                <input class="input" type="text" placeholder="Tu DNI">
+                <input class="input" type="text" placeholder="Tu DNI" required>
               </div>
             </div>
             <div class="field">
-              <label class="label">Teléfono</label>
+              <label class="label">Fecha de Nacimiento</label>
+              <div class="control">
+                <input class="input" type="date" required>
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Teléfono contacto</label>
               <div class="control has-icons-left">
-                <input class="input" type="tel" placeholder="Tu tfno de contacto">
+                <input class="input" type="tel" required>
                 <span class="icon is-small is-left">
                   <i class="fas fa-phone"></i>
                 </span>
               </div>
-              <p class="help">Tu tfno podrán verlo tus contrarios</p>
+              <p class="help">Tu número de teléfono podrán verlo tus contrincantes para llamarte</p>
             </div>
             <div class="field">
-              <label class="label">Email</label>
+              <label class="label">Correo electrónico</label>
               <div class="control has-icons-left">
-                <input class="input" type="email" placeholder="Tu dirección de Email">
+                <input class="input" type="email" placeholder="Tu dirección de e-mail" required>
                 <span class="icon is-small is-left">
                   <i class="fas fa-envelope"></i>
                 </span>
               </div>
-              <p class="help">Tu dirección de Email podrán verla tus contrincantes</p>
+              <p class="help">Tu dirección de e-mail podrán verla tus contrincantes para escribirte</p>
+            </div>
+            <div class="field">
+              <label class="checkbox">
+                <input type="checkbox" required>Autorizo que mis datos de contacto sean publicados entre los demás participantes de la competición
+              </label>
             </div>
           </form>
         </div>
