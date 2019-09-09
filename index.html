@@ -8,166 +8,180 @@
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   </head>
   <body>
-  <section class="section">
-    <div class="columns is-desktop">
-      <div class="column is-two-thirds">
-        <div class="container">
-          <h1 class="title">
-            INSCRIPCIÓN CLUB OPEN - TEMPORADA 2019/2020
-          </h1>
-          <p class="subtitle">
-            Rellena el formulario con tus datos:
-          </p>
-          <form action="enviook2.php" method="POST" enctype="application/x-www-form-urlencoded">
-            <input type="hidden" name="id" value="envioresultados">
-            <div class="field">
-              <label class="label">Nombre y Apellidos</label>
-              <div class="control">
-                <input class="input" type="text" placeholder="Nombre y apellidos" required>
-              </div>
-            </div>
+    <section class="section">
+      <div class="columns is-desktop">
+        <div class="column is-two-thirds">
+          <div class="container">
+            <h1 class="title">
+              CLUB OPEN<br>
+              INSCRIPCIÓN TEMPORADA 2019/2020
+            </h1>
+            <p class="subtitle">
+              Rellena el formulario con tus datos:
+            </p>
             
-            <div class="field">
-              <label class="label">DNI</label>
-              <div class="control">
-                <input class="input" type="text" placeholder="Tu DNI" required>
+            <form action="enviook2.php" method="POST" enctype="application/x-www-form-urlencoded">
+              <input type="hidden" name="id" value="envioresultados">
+              
+              <div class="field">
+                <label class="label">Nombre y Apellidos</label>
+                <div class="control">
+                  <input class="input" type="text" placeholder="Nombre y apellidos" required>
+                </div>
               </div>
-            </div>
-            
-            <div class="field">
-              <label class="label">Fecha de Nacimiento</label>
-              <div class="control">
-                <input class="input" type="date" required>
+              
+              <div class="field">
+                <label class="label">DNI</label>
+                <div class="control">
+                  <input class="input" type="text" placeholder="Tu DNI" required>
+                </div>
               </div>
-            </div>
-            
-            <div class="field">
-              <label class="label">Teléfono contacto</label>
-              <div class="control has-icons-left">
-                <input class="input" type="tel" required>
-                <span class="icon is-small is-left">
-                  <i class="fas fa-phone"></i>
-                </span>
+              
+              <div class="field">
+                <label class="label">Fecha de Nacimiento</label>
+                <div class="control">
+                  <input class="input" type="date" required>
+                </div>
               </div>
-              <p class="help">Tu número de teléfono podrán verlo tus contrincantes para llamarte</p>
-            </div>
-            
-            <div class="field">
-              <label class="label">Correo electrónico</label>
-              <div class="control has-icons-left">
-                <input class="input" type="email" placeholder="Tu dirección de e-mail" required>
-                <span class="icon is-small is-left">
-                  <i class="fas fa-envelope"></i>
-                </span>
+              
+              <div class="field">
+                <label class="label">Teléfono contacto</label>
+                <div class="control has-icons-left">
+                  <input class="input" type="tel">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-phone"></i>
+                  </span>
+                </div>
+                <p class="help">Tu número de teléfono podrán verlo otros jugadores</p>
               </div>
-              <p class="help">Tu dirección de e-mail podrán verla tus contrincantes para escribirte</p>
-            </div>
-            
-            <div class="field">
-              <div class="control">
-                <label class="checkbox">
-                  <input type="checkbox" required> Autorizo que mis datos de contacto sean publicados entre los demás participantes de la competición
-                </label>
+              
+              <div class="field">
+                <label class="label">Correo electrónico</label>
+                <div class="control has-icons-left">
+                  <input class="input" type="email" placeholder="Tu dirección de e-mail">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                </div>
+                <p class="help">Tu dirección de e-mail podrán verla otros jugadores</p>
               </div>
-            </div>
-            
-            <div class="field">
-              <label class="label">¿Cómo golpeas?</label>
+              
+              <div class="field">
+                <div class="control">
+                  <label class="checkbox">
+                    <input type="checkbox" required> Autorizo que mis datos de contacto sean publicados entre los demás participantes de la competición
+                  </label>
+                </div>
+              </div>
+              
+              
+              <div class="field">
+              <p class="label">¿Cómo golpeas?</p>
+                <div class="field is-grouped is-grouped-multiline">
+                  <div class="control">
+                    <label class="radio">
+                      <input type="radio" name="diestroozurdo">
+                      Soy Diestro
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="diestroozurdo">
+                      Soy Zurdo
+                    </label>
+                  </div>
+                  <div class="control">
+                    <div class="select">
+                      <select>
+                        <option>Selecciona tu mejor golpe</option>
+                        <option>Derecha</option>
+                        <option>Revés</option>
+                        <option>Saque</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              
+              <div class="field">
+                <p class="label">Tu raqueta habitual</p>
+                <div class="field is-grouped-multiline">
+                  <div class="field ">
+                    <div class="control">
+                      <div class="select">
+                        <select>
+                          <option>Marca de tu raqueta</option>
+                          <option>Artengo</option>
+                          <option>Babolat</option>
+                          <option>Dunlop</option>
+                          <option>Head</option>
+                          <option>Prince</option>
+                          <option>ProKennex</option>
+                          <option>Tecnifibre</option>
+                          <option>Völkl</option>
+                          <option>Wilson</option>
+                          <option>Yonex</option>
+                          <option>Otra</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="field ">
+                    <div class="control">
+                      <div class="select">
+                        <select>
+                          <option>Marca del cordaje</option>
+                          <option>Babolat</option>
+                          <option>Dunlop</option>
+                          <option>Gamma</option>
+                          <option>Gosen</option>
+                          <option>Head</option>
+                          <option>Kirschbaum</option>
+                          <option>Luxilon</option>
+                          <option>Mantis</option>
+                          <option>MSV</option>
+                          <option>Pacific</option>
+                          <option>Polystar</option>
+                          <option>Prince</option>
+                          <option>Signum Pro</option>
+                          <option>Solinco</option>
+                          <option>Tecnifibre</option>
+                          <option>Topspin</option>
+                          <option>Völkl</option>
+                          <option>Weiss Cannon</option>
+                          <option>Wilson</option>
+                          <option>Yonex</option>
+                          <option>Otra</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="columns">
+                    <div class="column is-narrow is-half">
+                      <div class="field">
+                        <div class="control">
+                          <label class="help">Tensión que sueles poner (en Kgs.):
+                          <input class="input is-small" type="number" min="10" max="40" step="1" placeholder="Tensión Kgs.">
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
               <div class="field is-grouped">
                 <div class="control">
-                  <label class="radio">
-                    <input type="radio" name="diestroozurdo">
-                    Soy Diestro
-                  </label>
-                  <label class="radio">
-                    <input type="radio" name="diestroozurdo">
-                    Soy Zurdo
-                  </label>
+                  <input class="button is-link" type="submit" value="Enviar" method="post">
                 </div>
                 <div class="control">
-                  <div class="select">
-                    <select>
-                      <option>Selecciona tu mejor golpe</option>
-                      <option>Derecha</option>
-                      <option>Revés</option>
-                      <option>Saque</option>
-                    </select>
-                  </div>
+                  <input class="button is-text" type="reset" value="Cancelar">
                 </div>
               </div>
-            </div>
-            
-            <div class="field">
-              <label class="label">Tu herramienta</label>
-              <div class="field is-grouped">
-                <div class="control">
-                  <div class="select">
-                    <select>
-                      <option>Marca de raqueta que sueles utilizar</option>
-                      <option>Artengo</option>
-                      <option>Babolat</option>
-                      <option>Dunlop</option>
-                      <option>Head</option>
-                      <option>Prince</option>
-                      <option>ProKennex</option>
-                      <option>Tecnifibre</option>
-                      <option>Völkl</option>
-                      <option>Wilson</option>
-                      <option>Yonex</option>
-                      <option>Otra</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="control">
-                  <div class="select">
-                    <select>
-                      <option>Cordaje que sueles utilizar</option>
-                      <option>Babolat</option>
-                      <option>Dunlop</option>
-                      <option>Gamma</option>
-                      <option>Gosen</option>
-                      <option>Head</option>
-                      <option>Kirschbaum</option>
-                      <option>Luxilon</option>
-                      <option>Mantis</option>
-                      <option>MSV</option>
-                      <option>Pacific</option>
-                      <option>Polystar</option>
-                      <option>Prince</option>
-                      <option>Signum Pro</option>
-                      <option>Solinco</option>
-                      <option>Tecnifibre</option>
-                      <option>Topspin</option>
-                      <option>Völkl</option>
-                      <option>Weiss Cannon</option>
-                      <option>Wilson</option>
-                      <option>Yonex</option>
-                      <option>Otra</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="control">
-                  <label>
-                    <input class="input" type="number" min="10" max="40" step="1" placeholder="Tensión Kgs.">
-                  Tensión que sueles poner (en Kgs.)
-                  </label>
-                </div>
-              </div>
-            </div>
-            
-            <div class="field is-grouped">
-              <div class="control">
-                <input class="button is-link" type="submit" value="Enviar" method="post">
-              </div>
-              <div class="control">
-                <input class="button is-text" type="reset" value="Cancelar">
-              </div>
-            </div>
-            
-          </form>
+              
+            </form>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
   </body>
 </html>
