@@ -26,18 +26,21 @@
                 <input class="input" type="text" placeholder="Nombre y apellidos" required>
               </div>
             </div>
+            
             <div class="field">
               <label class="label">DNI</label>
               <div class="control">
                 <input class="input" type="text" placeholder="Tu DNI" required>
               </div>
             </div>
+            
             <div class="field">
               <label class="label">Fecha de Nacimiento</label>
               <div class="control">
                 <input class="input" type="date" required>
               </div>
             </div>
+            
             <div class="field">
               <label class="label">Teléfono contacto</label>
               <div class="control has-icons-left">
@@ -48,6 +51,7 @@
               </div>
               <p class="help">Tu número de teléfono podrán verlo tus contrincantes para llamarte</p>
             </div>
+            
             <div class="field">
               <label class="label">Correo electrónico</label>
               <div class="control has-icons-left">
@@ -58,11 +62,24 @@
               </div>
               <p class="help">Tu dirección de e-mail podrán verla tus contrincantes para escribirte</p>
             </div>
+            
             <div class="field">
-              <label class="checkbox">
-                <input type="checkbox" required>Autorizo que mis datos de contacto sean publicados entre los demás participantes de la competición
-              </label>
+              <div class="control">
+                <label class="checkbox">
+                  <input type="checkbox" required> Autorizo que mis datos de contacto sean publicados entre los demás participantes de la competición
+                </label>
+              </div>
             </div>
+            
+            <div class="field is-grouped">
+              <div class="control">
+                <button class="button is-link">Enviar<input type="submit" value="Enviar" method="post"></button>
+              </div>
+              <div class="control">
+                <button class="button is-text">Cancelar<input type="reset" value="Cancelar"></button>
+              </div>
+            </div>
+            
           </form>
         </div>
       </div>
